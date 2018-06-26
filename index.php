@@ -1,7 +1,7 @@
 <!doctype>
 <html>
 <head>
-<h1>AkinUCA</h1>
+<h1>Guesser</h1>
 </head>
 <body>
 <?php
@@ -53,7 +53,7 @@ var matriz = <?php echo json_encode( $matriz ) ?>;
 var preguntas = <?php echo json_encode( $preguntas ) ?>;
 var heroe = Akinator(preguntas,matriz);
 console.log(heroe);
-document.getElementById("heroe").innerHTML = "La planta malita tiene "+ heroe;
+document.getElementById("heroe").innerHTML = "You are thinking in "+ heroe;
 </script>
 </body>
 </html>

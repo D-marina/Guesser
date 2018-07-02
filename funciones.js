@@ -74,20 +74,20 @@ function Akinator(preguntas,matriz)
 {
 	var preg = preguntas;
 	var m = matriz;
-	var k = 10;
+	//var k = 100;
 	var indice;
 	var respuesta;
 	while(m.length > 1 && k>0)
 	{
-		console.log("m: "+m);
+	//	console.log("m: "+m);
 		var indice = elegirPregunta(m);
-		console.log(indice);
+	//	console.log(indice);
 		respuesta = Interaccion(preg,indice);
 		m = RecortarMatriz(m,indice,respuesta);
 		preg = QuitarElemento(preg,indice);
-		k--;
+	//	k--;
 	}
-	console.log("longitud: "+m.length);
-	console.log("M00: "+m[0]);
+	//console.log("longitud: "+m.length);
+	//console.log("M00: "+m[0]);
 	return(m[0][0]);
 }
